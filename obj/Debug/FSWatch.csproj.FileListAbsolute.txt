@@ -1,0 +1,15 @@
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.csprojAssemblyReference.cache
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.Main.resources
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.Properties.Resources.resources
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.csproj.GenerateResource.cache
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.csproj.CoreCompileInputs.cache
+C:\Users\t y\source\repos\FSWatch\bin\Debug\FSWatch.exe.config
+C:\Users\t y\source\repos\FSWatch\bin\Debug\FSWatch.exe
+C:\Users\t y\source\repos\FSWatch\bin\Debug\FSWatch.pdb
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.exe
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.pdb
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.SecondaryWindow.resources
+C:\Users\t y\source\repos\FSWatch\bin\Debug\FSWatch.exe.manifest
+C:\Users\t y\source\repos\FSWatch\bin\Debug\FSWatch.application
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.exe.manifest
+C:\Users\t y\source\repos\FSWatch\obj\Debug\FSWatch.application
