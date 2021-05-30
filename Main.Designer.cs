@@ -35,8 +35,10 @@ namespace FSWatch
             this.filterInput = new System.Windows.Forms.TextBox();
             this.startingInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.copyCheckbox = new System.Windows.Forms.CheckBox();
             this.startButton = new System.Windows.Forms.Button();
+            this.newFileActionChoice = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.logToFileCheckbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -92,22 +94,9 @@ namespace FSWatch
             this.label2.TabIndex = 3;
             this.label2.Text = "Starting Directory";
             // 
-            // copyCheckbox
-            // 
-            this.copyCheckbox.AutoSize = true;
-            this.copyCheckbox.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyCheckbox.Location = new System.Drawing.Point(16, 142);
-            this.copyCheckbox.Name = "copyCheckbox";
-            this.copyCheckbox.Size = new System.Drawing.Size(171, 20);
-            this.copyCheckbox.TabIndex = 5;
-            this.copyCheckbox.Text = "Make copies of new files";
-            this.copyCheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.copyCheckbox.UseVisualStyleBackColor = true;
-            this.copyCheckbox.CheckedChanged += new System.EventHandler(this.copyCheckbox_CheckedChanged);
-            // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(16, 169);
+            this.startButton.Location = new System.Drawing.Point(12, 221);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(154, 32);
             this.startButton.TabIndex = 6;
@@ -115,13 +104,54 @@ namespace FSWatch
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
+            // newFileActionChoice
+            // 
+            this.newFileActionChoice.Cursor = System.Windows.Forms.Cursors.Default;
+            this.newFileActionChoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.newFileActionChoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.newFileActionChoice.FormattingEnabled = true;
+            this.newFileActionChoice.Items.AddRange(new object[] {
+            "Do nothing",
+            "Make copy",
+            "Delete"});
+            this.newFileActionChoice.Location = new System.Drawing.Point(16, 165);
+            this.newFileActionChoice.Name = "newFileActionChoice";
+            this.newFileActionChoice.Size = new System.Drawing.Size(113, 24);
+            this.newFileActionChoice.TabIndex = 7;
+            this.newFileActionChoice.SelectedIndexChanged += new System.EventHandler(this.newFileActionChoice_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "New file action";
+            // 
+            // logToFileCheckbox
+            // 
+            this.logToFileCheckbox.AutoSize = true;
+            this.logToFileCheckbox.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logToFileCheckbox.Location = new System.Drawing.Point(16, 195);
+            this.logToFileCheckbox.Name = "logToFileCheckbox";
+            this.logToFileCheckbox.Size = new System.Drawing.Size(86, 20);
+            this.logToFileCheckbox.TabIndex = 9;
+            this.logToFileCheckbox.Text = "Log to file";
+            this.logToFileCheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.logToFileCheckbox.UseVisualStyleBackColor = true;
+            this.logToFileCheckbox.CheckedChanged += new System.EventHandler(this.logToFileCheckbox_CheckedChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(192, 211);
+            this.ClientSize = new System.Drawing.Size(260, 263);
+            this.Controls.Add(this.logToFileCheckbox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.newFileActionChoice);
             this.Controls.Add(this.startButton);
-            this.Controls.Add(this.copyCheckbox);
             this.Controls.Add(this.startingInput);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.filterInput);
@@ -144,8 +174,10 @@ namespace FSWatch
         private System.Windows.Forms.TextBox filterInput;
         private System.Windows.Forms.TextBox startingInput;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox copyCheckbox;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.ComboBox newFileActionChoice;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox logToFileCheckbox;
     }
 }
 
